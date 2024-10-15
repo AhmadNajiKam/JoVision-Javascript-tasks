@@ -1,5 +1,5 @@
-const button = document.querySelector("button");
+const btn = document.querySelector("button");
 function printHelloWorld(){
     console.log("Hello World");
 }
-button.addEventListener("click",printHelloWorld);
+btn.addEventListener("click",printHelloWorld);
