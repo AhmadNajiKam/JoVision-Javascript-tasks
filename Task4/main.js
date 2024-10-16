@@ -7,9 +7,9 @@ for(let i=num1;i<=num2;i++)
 return nums;
 }
 function calculateArraySum(){
-    const nums = fillNumbers(0,100);
+    const nums = fillNumbers(0,99);
     let sum=0;
-    for(let i=0;i<=100;i++)sum+=nums[i];
+    for(let i=0;i<100;i++)sum+=nums[i];
     return sum;
 } 
 function printArraySum(){
