@@ -28,6 +28,13 @@ function addThreeToArrayElements(){
     for(let i=0;i<100;i++)nums[i]+=3;
     console.log(nums);
 }
+function printMembersFromArray(){
+    let nums = fillNumbers(0,99);
+    console.log(nums.slice(20,40));
+
+}
 btn1.addEventListener("click",removeDivByThree);
 btn2.addEventListener("click",addNumsToArray);
 btn3.addEventListener("click",addThreeToArrayElements);
+btn4.addEventListener("click",printMembersFromArray);
+btn5.addEventListener("click",addThreeToArrayElements);
