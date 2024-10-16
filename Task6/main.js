@@ -33,8 +33,22 @@ function printMembersFromArray(){
     console.log(nums.slice(20,40));
 
 }
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+          let j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+function shuffleThenSortArray(){
+    let nums=fillNumbers(0,99);
+    shuffleArray(nums);
+    nums.sort();
+    nums.reverse();
+    console.log(nums);
+}
 btn1.addEventListener("click",removeDivByThree);
 btn2.addEventListener("click",addNumsToArray);
 btn3.addEventListener("click",addThreeToArrayElements);
 btn4.addEventListener("click",printMembersFromArray);
-btn5.addEventListener("click",addThreeToArrayElements);
+btn5.addEventListener("click",shuffleThenSortArray);
