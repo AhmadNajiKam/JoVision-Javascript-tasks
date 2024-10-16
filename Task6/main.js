@@ -15,6 +15,9 @@ for(let i=0;i<100;i++){
 console.log(nums);
 }
 function addNumsToArray(){
-
+let nums = fillNumbers(0,99);
+for (let i=100;i<150;i++)nums.push(i);
+console.log(nums);
 }
 btn1.addEventListener("click",removeDivByThree);
+btn2.addEventListener("click",addNumsToArray);
