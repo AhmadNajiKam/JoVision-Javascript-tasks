@@ -4,6 +4,7 @@ const Age = document.querySelector("#Age");
 const Name = document.querySelector("#Name");
 function printData(){
     const data ={};
+    
     data.name=Name.value;
     data.age=Age.value;
     Age.value='';
